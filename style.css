@@ -45,7 +45,7 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
     color: #979797;
 }
 
@@ -76,12 +76,11 @@ input {
     position: absolute;
     width: 361px;
     height: 63px;
-    box-shadow: -1px -1px 4px rgba(0, 83, 255, 0.07), 2px 2px 4px 2px rgba(0, 83, 255, 0.07);
+    /* box-shadow: -1px -1px 4px rgba(0, 83, 255, 0.07), 2px 2px 4px 2px rgba(0, 83, 255, 0.07); */
     border-radius: 0px 1px 1px 0px;
-    background: #f3f3f3;
+    background: #EFF6F9;
     outline: none;
     border: none;
-    border-color: transparent;
 }
 
 input:invalid {
@@ -92,14 +91,17 @@ input:invalid {
 
 input:focus,
 input:valid {
-    border-color: #EFF6F9;
+    border-color: #F9FDFF;
+    box-shadow: -1px -1px 4px rgba(0, 83, 255, 0.07), 2px 2px 4px 2px rgba(0, 83, 255, 0.07);
+    border-radius: 0px 1px 1px 0px;
 }
 
 input:focus~label,
 input:valid~label {
     font-size: 12px;
+    letter-spacing: 0.08em;
     top: 2px;
-    color: #828283;
+    color: #BCBEC0;
 }
 
 .input-field-email {
@@ -302,7 +304,7 @@ ul {
     color: #fff;
     font-family: 'proxima-nova', sans-serif;
     font-size: 20px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
     line-height: 20px;
     width: 421px;
 }
