@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <div class="white_box">
+    <div class="white_box" id="whiteBox">
         <div class="welcome">
             Welcome
         </div>
@@ -15,26 +15,33 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tincidunt morbi purus.
         </div>
         <div class="input-field">
-            <input type="text" id="name" required />
+            <input type="text" id="name" onclick="show_hide(1)" required />
+            <div id="indicator1"></div>
             <label for="name">USER NAME</label>
         </div>
+
         <div class="input-field-email">
-            <input type="email" id="email" required />
+            <input type="email" id="email" onclick="show_hide(2)" required />
+            <div id="indicator2"></div>
             <label for="email">EMAIL</label>
         </div>
+
         <div class="input-field-password">
-            <input type="password" id="password" required />
+            <input type="password" id="password" onclick="show_hide(3)" required />
+            <div id="indicator3"></div>
             <label for="password">PASSWORD</label>
         </div>
+
         <div class="btn">
             <button class="button loginbutton">LOGIN</button>
         </div>
         <div class="singup">
-            <p id="sign">Don't have account?<a href="#" id="hrf">Signup</a></p>
+            <p id="sign">Don't have account?<a href="#" id="hrf" onclick="PositionChange()">Signup</a></p>
         </div>
+
     </div>
 
-    <div class="blue_box">
+    <div class="blue_box" id="blueBox">
 
         <div id="slider">
             <ul>
@@ -42,8 +49,9 @@
                     <div class="slider-container">
                         <p>We are <b>Consilio Design</b></p>
                         <p id="lore">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tincidunt morbi purus.</p>
-                        <div id="learn">
-                            <p id="le">Learn More</p>
+                        <button type="button" class="bttn">Learn More</button>
+                        <div class="arrow">
+                            <span>&#8594;</span>
                         </div>
                     </div>
                 </li>
@@ -53,8 +61,9 @@
                     <div class="slider-container">
                         <p>We are <b>Consilio Design</b></p>
                         <p id="lore">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tincidunt morbi purus.</p>
-                        <div id="learn">
-                            <p id="le">Learn More</p>
+                        <button type="button" class="bttn">Learn More</button>
+                        <div class="arrow">
+                            <span>&#8594;</span>
                         </div>
                     </div>
                 </li>
@@ -63,8 +72,9 @@
                     <div class="slider-container">
                         <p>We are <b>Consilio Design</b></p>
                         <p id="lore">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tincidunt morbi purus.</p>
-                        <div id="learn">
-                            <p id="le">Learn More</p>
+                        <button type="button" class="bttn">Learn More</button>
+                        <div class="arrow">
+                            <span>&#8594;</span>
                         </div>
                     </div>
                 </li>
@@ -76,7 +86,8 @@
 
     </div>
 
-
+    <script src="main.js">
+    </script>
 
 </body>
 
