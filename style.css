@@ -9,7 +9,7 @@ body {
     left: 20px;
 }
 
-.white_box {
+.white_box-left {
     background-color: white;
     position: absolute;
     top: 76px;
@@ -20,12 +20,39 @@ body {
     transition: 2s left;
 }
 
+.white_box-right {
+    background-color: white;
+    position: absolute;
+    top: 76px;
+    height: 775px;
+    width: 600px;
+    left: 375px;
+    border-radius: 10px;
+    transition: 2s left;
+    display: none;
+}
+
+.hello {
+    position: absolute;
+    width: 151px;
+    height: 36px;
+    left: 120px;
+    top: 115px;
+    font-family: 'proxima-nova', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    color: #1D2049;
+}
+
 .welcome {
     position: absolute;
     width: 151px;
     height: 36px;
     left: 120px;
-    top: 105px;
+    top: 100px;
     font-family: 'proxima-nova', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -40,7 +67,22 @@ body {
     width: 319px;
     height: 39px;
     left: 120px;
-    top: 183px;
+    top: 190px;
+    font-family: 'proxima-nova', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #979797;
+}
+
+.lol-right {
+    position: absolute;
+    width: 319px;
+    height: 39px;
+    left: 120px;
+    top: 160px;
     font-family: 'proxima-nova', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -55,7 +97,43 @@ body {
 
 .input-field {
     position: absolute;
-    top: 249px;
+    top: 250px;
+    left: 120px;
+    width: 361px;
+    height: 63px;
+    box-shadow: -1px -1px 4px rgba(0, 83, 255, 0.07), 2px 2px 4px 2px rgba(0, 83, 255, 0.07);
+}
+
+.input-field-right {
+    position: absolute;
+    top: 230px;
+    left: 120px;
+    width: 361px;
+    height: 63px;
+    box-shadow: -1px -1px 4px rgba(0, 83, 255, 0.07), 2px 2px 4px 2px rgba(0, 83, 255, 0.07);
+}
+
+.input-field-email-right {
+    position: absolute;
+    margin-top: 330px;
+    left: 120px;
+    width: 361px;
+    height: 63px;
+    box-shadow: -1px -1px 4px rgba(0, 83, 255, 0.07), 2px 2px 4px 2px rgba(0, 83, 255, 0.07);
+}
+
+.input-field-password {
+    position: absolute;
+    margin-top: -90px;
+    left: 120px;
+    width: 361px;
+    height: 63px;
+    box-shadow: -1px -1px 4px rgba(0, 83, 255, 0.07), 2px 2px 4px 2px rgba(0, 83, 255, 0.07);
+}
+
+.input-field-password-right {
+    position: absolute;
+    margin-top: 430px;
     left: 120px;
     width: 361px;
     height: 63px;
@@ -64,7 +142,9 @@ body {
 
 #indicator1,
 #indicator2,
-#indicator3 {
+#indicator3,
+#indicator4,
+#indicator5 {
     background-color: #0dbde6;
     position: absolute;
     height: 63px;
@@ -94,12 +174,6 @@ input {
     border: none;
 }
 
-input:invalid {
-    outline: 0;
-    // color: #ff2300;
-    //   border-color: #ff2300;
-}
-
 input:focus,
 input:valid:target {
     border-color: #F9FDFF;
@@ -124,7 +198,7 @@ input:valid~label {
 }
 
 .input-field-password {
-    position: absolute;
+    position: relative;
     top: 449px;
     left: 120px;
     width: 361px;
@@ -137,7 +211,23 @@ input:valid~label {
     width: 361px;
     height: 65px;
     left: 120px;
-    top: 549px;
+    top: 470px;
+    background: linear-gradient(91.79deg, #186EFF 0%, #6692DD 99.88%);
+    box-shadow: 2px 2px 20px rgba(17, 87, 227, 0.07);
+    border-radius: 0px 1px 1px 0px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'proxima-nova', sans-serif;
+}
+
+.button-right {
+    border: none;
+    position: absolute;
+    width: 361px;
+    height: 65px;
+    left: 120px;
+    top: 550px;
     background: linear-gradient(91.79deg, #186EFF 0%, #6692DD 99.88%);
     box-shadow: 2px 2px 20px rgba(17, 87, 227, 0.07);
     border-radius: 0px 1px 1px 0px;
@@ -150,7 +240,13 @@ input:valid~label {
 .singup {
     position: relative;
     left: 200px;
-    top: 640px;
+    top: 600px;
+}
+
+.singin {
+    position: relative;
+    left: 200px;
+    top: 650px;
 }
 
 #sign {
@@ -180,7 +276,7 @@ input:valid~label {
 }
 
 
-/*TEXT SLIDER CONTROL*/
+/* TEXT SLIDER CONTROL
 
 #slider,
 ul {
@@ -223,7 +319,8 @@ ul {
 
 /*** Content ***/
 
-.slider-container {
+
+/* .slider-container {
     color: #000;
     margin: 0 auto;
     padding: 0;
@@ -313,6 +410,126 @@ ul {
     letter-spacing: 0.02em;
     line-height: 20px;
     width: 421px;
+} */
+
+.slideshow-container {
+    position: relative;
+    background: transparent;
+    top: 250px;
+}
+
+
+/* Slides */
+
+.mySlides {
+    display: none;
+    /* padding: 80px; */
+    /* text-align: center; */
+    /* margin-top: -200px; */
+}
+
+
+/* Next & previous buttons */
+
+
+/* .prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+} */
+
+
+/* Position the "next button" to the right */
+
+
+/* .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+
+/* .prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+} */
+
+
+/* The dot/bullet/indicator container */
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    /* background: #ddd; */
+    margin-top: 400px;
+    background: transparent;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    background: #ADC4FF;
+    height: 6px;
+    width: 13px;
+    /* margin: 0 2px; */
+    /* background-color: #bbb; */
+    border-radius: 14px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+/* Add a background color to the active dot/circle */
+
+.active,
+.dot:hover {
+    background-color: #717171;
+    width: 25px;
+    height: 6px;
+    border-radius: 14px;
+}
+
+
+/* Add an italic font style to all quotes */
+
+#design {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 55px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    margin-top: -120px;
+    margin-left: 80px;
+    line-height: 120%;
+}
+
+
+/* Add a blue color to the author */
+
+.author {
+    width: 421px;
+    color: #fff;
+    margin-left: 80px;
+    font-family: 'proxima-nova', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    margin-top: -20px;
 }
 
 .bttn {
@@ -323,7 +540,8 @@ ul {
     font-size: 13px;
     line-height: 13px;
     letter-spacing: 0.04em;
-    margin-left: 20px;
+    margin-left: 80px;
+    margin-top: 15px;
     color: white;
     border: 1px solid #fff;
     cursor: pointer;
@@ -335,7 +553,7 @@ ul {
 .arrow {
     width: 117px;
     height: 45px;
-    margin-left: 115px;
+    margin-left: 175px;
     margin-top: -54px;
     right: 100px;
 }

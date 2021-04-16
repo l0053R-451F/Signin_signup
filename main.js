@@ -1,31 +1,89 @@
 function show_hide(num) {
-    if (num == 1) {
+    var choice = num;
+    if (choice == 1) {
         document.getElementById("indicator1").style.display = "block";
         document.getElementById("indicator2").style.display = "none";
         document.getElementById("indicator3").style.display = "none";
-    } else if (num == 2) {
+        document.getElementById("indicator4").style.display = "none";
+        document.getElementById("indicator5").style.display = "none";
+    } else if (choice == 2) {
         document.getElementById("indicator1").style.display = "none";
         document.getElementById("indicator2").style.display = "block";
         document.getElementById("indicator3").style.display = "none";
-    } else if (num == 3) {
+        document.getElementById("indicator4").style.display = "none";
+        document.getElementById("indicator5").style.display = "none";
+    } else if (choice == 3) {
         document.getElementById("indicator1").style.display = "none";
         document.getElementById("indicator2").style.display = "none";
         document.getElementById("indicator3").style.display = "block";
-    } else {
+        document.getElementById("indicator4").style.display = "none";
+        document.getElementById("indicator5").style.display = "none";
+    } else if (choice == 4) {
         document.getElementById("indicator1").style.display = "none";
         document.getElementById("indicator2").style.display = "none";
         document.getElementById("indicator3").style.display = "none";
+        document.getElementById("indicator4").style.display = "block";
+        document.getElementById("indicator5").style.display = "none";
+    } else if (choice == 5) {
+        document.getElementById("indicator1").style.display = "none";
+        document.getElementById("indicator2").style.display = "none";
+        document.getElementById("indicator3").style.display = "none";
+        document.getElementById("indicator4").style.display = "none";
+        document.getElementById("indicator5").style.display = "block";
     }
-
-    // var x = document.getElementById("indicator");
-    // if (x.style.display == "none") {
-    //     x.style.display = "block";
-    // } else {
-    //     x.style.display = "none";
-    // }
 }
 
-function PositionChange() {
-    document.getElementById("whiteBox").style.left = "375px";
-    document.getElementById("blueBox").style.left = "915px";
+
+
+
+
+function PositionChange(n) {
+    var count = n;
+    if (count == 1) {
+        document.getElementById("whiteBoxLeft").style.left = "375px";
+        setTimeout(() => { document.getElementById("whiteBoxLeft").style.display = "none"; }, 3000);
+        setTimeout(() => { document.getElementById("whiteBoxRight").style.display = "block"; }, 3000);
+        document.getElementById("blueBox").style.left = "915px";
+        document.getElementById("whiteBoxRight").style.left = "375px";
+    } else if (count == 2) {
+
+        document.getElementById("whiteBoxRight").style.left = "915px";
+        document.getElementById("blueBox").style.left = "375px";
+        setTimeout(() => { document.getElementById("whiteBoxRight").style.display = "none"; }, 3000);
+        setTimeout(() => { document.getElementById("whiteBoxLeft").style.display = "block"; }, 3000);
+        document.getElementById("whiteBoxLeft").style.left = "915px";
+    }
+}
+
+//slider control
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+window.onload = function() {
+    setInterval(function() {
+        plusSlides(1);
+    }, 3000);
 }
