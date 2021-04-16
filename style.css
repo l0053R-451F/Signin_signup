@@ -176,7 +176,8 @@ input {
 
 input:focus,
 input:valid:target {
-    border-color: #F9FDFF;
+    /* border-color: #F9FDFF; */
+    background: #F9FDFF;
     box-shadow: -1px -1px 4px rgba(0, 83, 255, 0.07), 2px 2px 4px 2px rgba(0, 83, 255, 0.07);
     border-radius: 0px 1px 1px 0px;
 }
@@ -275,143 +276,6 @@ input:valid~label {
     transition: 2s left;
 }
 
-
-/* TEXT SLIDER CONTROL
-
-#slider,
-ul {
-    height: 400px;
-}
-
-#slider {
-    margin: auto;
-    overflow: hidden;
-    padding: 10px;
-    margin-top: 50px;
-    position: relative;
-    width: 500px;
-    right: 40px;
-}
-
-#slider li {
-    float: left;
-    position: relative;
-    width: 600px;
-    display: inline-block;
-    height: 200px;
-}
-
-#slider ul {
-    list-style: none;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 9000px;
-    transition: left .2s linear;
-    -moz-transition: left .2s linear;
-    -o-transition: left .2s linear;
-    -webkit-transition: left .2s linear;
-    margin-left: -25px;
-    font-family: open sans;
-    color: #666;
-}
-
-
-/*** Content ***/
-
-
-/* .slider-container {
-    color: #000;
-    margin: 0 auto;
-    padding: 0;
-    width: 550px;
-    min-height: 180px;
-    top: 100px;
-}
-
-.slider-container h2 {
-    color: #fff;
-}
-
-.slider-container p {
-    margin: 40px 25px;
-    line-height: 150%;
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 55px;
-    color: #fff;
-}
-
-@-webkit-keyframes slide-animation {
-    0% {
-        opacity: 0;
-    }
-    2% {
-        opacity: 1;
-    }
-    20% {
-        left: 0px;
-        opacity: 1;
-    }
-    22.5% {
-        opacity: 0.6;
-    }
-    25% {
-        left: -600px;
-        opacity: 1;
-    }
-    45% {
-        left: -600px;
-        opacity: 1;
-    }
-    47.5% {
-        opacity: 0.6;
-    }
-    50% {
-        left: -1200px;
-        opacity: 1;
-    }
-    70% {
-        left: -1200px;
-        opacity: 1;
-    }
-    72.5% {
-        opacity: 0.6;
-    }
-    75% {
-        left: -1800px;
-        opacity: 1;
-    }
-    95% {
-        opacity: 1;
-    }
-    98% {
-        left: -1800px;
-        opacity: 0;
-    }
-    100% {
-        left: 0px;
-        opacity: 0;
-    }
-}
-
-#slider ul {
-    -webkit-animation: slide-animation 20s infinite;
-}
-
-#slider ul:hover {
-    -moz-animation-play-state: paused;
-    -webkit-animation-play-state: paused;
-}
-
-#lore {
-    color: #fff;
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 20px;
-    letter-spacing: 0.02em;
-    line-height: 20px;
-    width: 421px;
-} */
-
 .slideshow-container {
     position: relative;
     background: transparent;
@@ -423,49 +287,7 @@ ul {
 
 .mySlides {
     display: none;
-    /* padding: 80px; */
-    /* text-align: center; */
-    /* margin-top: -200px; */
 }
-
-
-/* Next & previous buttons */
-
-
-/* .prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-} */
-
-
-/* Position the "next button" to the right */
-
-
-/* .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-
-/* On hover, add a black background color with a little bit see-through */
-
-
-/* .prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-} */
 
 
 /* The dot/bullet/indicator container */
@@ -483,7 +305,7 @@ ul {
 
 .dot {
     cursor: pointer;
-    background: #ADC4FF;
+    background: #fff;
     height: 6px;
     width: 13px;
     /* margin: 0 2px; */
@@ -498,7 +320,7 @@ ul {
 
 .active,
 .dot:hover {
-    background-color: #717171;
+    background-color: #fff;
     width: 25px;
     height: 6px;
     border-radius: 14px;

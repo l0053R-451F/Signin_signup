@@ -41,16 +41,16 @@ function PositionChange(n) {
     var count = n;
     if (count == 1) {
         document.getElementById("whiteBoxLeft").style.left = "375px";
-        setTimeout(() => { document.getElementById("whiteBoxLeft").style.display = "none"; }, 3000);
-        setTimeout(() => { document.getElementById("whiteBoxRight").style.display = "block"; }, 3000);
+        setTimeout(() => { document.getElementById("whiteBoxLeft").style.display = "none"; }, 2000);
+        setTimeout(() => { document.getElementById("whiteBoxRight").style.display = "block"; }, 2000);
         document.getElementById("blueBox").style.left = "915px";
         document.getElementById("whiteBoxRight").style.left = "375px";
     } else if (count == 2) {
 
         document.getElementById("whiteBoxRight").style.left = "915px";
         document.getElementById("blueBox").style.left = "375px";
-        setTimeout(() => { document.getElementById("whiteBoxRight").style.display = "none"; }, 3000);
-        setTimeout(() => { document.getElementById("whiteBoxLeft").style.display = "block"; }, 3000);
+        setTimeout(() => { document.getElementById("whiteBoxRight").style.display = "none"; }, 2000);
+        setTimeout(() => { document.getElementById("whiteBoxLeft").style.display = "block"; }, 2000);
         document.getElementById("whiteBoxLeft").style.left = "915px";
     }
 }
