@@ -1,0 +1,261 @@
+@font-face {
+    font-family: proxima-nova;
+    src: url(../font/ProximaNovaRegular.woff);
+}
+
+body {
+    background-image: url(../image/main_backgroud.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: 'proxima-nova';
+}
+
+a {
+    text-decoration: none;
+    color: #047fcc;
+}
+
+input {
+    width: 361px;
+    height: 63px;
+    border-radius: 0px 1px 1px 0px;
+    background: #EFF6F9;
+    outline: none;
+    border: none;
+}
+
+input:focus,
+input:valid:target {
+    background: #F9FDFF;
+    border-left: 5px solid #0dbde6;
+    box-shadow: -1px -1px 4px rgba(0, 83, 255, 0.07), 2px 2px 4px 2px rgba(0, 83, 255, 0.07);
+    border-radius: 0px 1px 1px 0px;
+}
+
+input:focus~label,
+input:valid~label {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    top: 2px;
+    color: #BCBEC0;
+}
+label {
+    position: absolute;
+    top: 23px;
+    left: 10px;
+    width: 120px;
+    pointer-events: none;
+    color: #828283;
+    transition: 0.2s all;
+    cursor: text;
+}
+
+.input-field {
+    position: relative;
+    width: 361px;
+    height: 63px;
+    box-shadow: -1px -1px 4px rgba(0, 83, 255, 0.07), 2px 2px 4px 2px rgba(0, 83, 255, 0.07);
+    margin-bottom: 44px;
+}
+
+
+.button {
+    border: none;
+    width: 361px;
+    height: 65px;
+    left: 120px;
+    top: 470px;
+    background: linear-gradient(91.77deg, #124CE5 0.14%, #0D8CD9 100%);
+    box-shadow: 2px 2px 20px rgba(17, 87, 227, 0.07);
+    border-radius: 0px 1px 1px 0px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 45px;
+}
+
+
+.login-signup-text {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    color: #747475;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*
+*
+*white box
+*/
+.white_box {
+    background-color: white;
+    position: relative;
+    top: 76px;
+    left: 920px;
+    height: 775px;
+    width: 600px;
+    border-radius: 10px;
+    transition: 2s left;
+}
+.content{
+    position: absolute;
+    margin: 114px;
+}
+.hello {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    color: #1D2049;
+    margin-bottom: 23px;
+}
+
+.text {
+    width: 319px;
+    height: 39px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #979797;
+    margin-bottom: 38px;
+}
+
+/*
+*
+*blue box
+*/
+
+.blue_box {
+    top: -610px;
+    left: 330px;
+    position: relative;
+    background-image: url(../image/blue_box.png);
+    background-size: 100% 100%;
+    height: 580px;
+    width: 650px;
+    border-radius: 10px;
+    transition: 2s left;
+    box-shadow: 10px 0px 27px 0px #2C63FF7A;
+}
+
+
+/*
+slider
+*/
+.mySlides {
+    display: none;
+}
+.slideshow-container {
+    position: absolute;
+    margin: 100px;
+    background: transparent;
+}
+.slide-title {
+    font-size: 55px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    line-height: 120%;
+    margin-bottom: 32px;
+}
+
+.slide-text {
+    width: 421px;
+    color: #fff;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    margin-bottom: 32px;
+}
+.btn-learn{
+    position: relative;
+}
+
+.learn-more-btn {
+    position: absolute;
+    background-color: transparent;
+    width: 117px;
+    height: 45px;
+    padding: 7px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 0.04em;
+    color: white;
+    border: 1px solid #fff;
+    cursor: pointer;
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+/*arrow*/
+.arrow-mid{
+    position: absolute;
+    background-color: #ffffff;
+    height: 1px;
+    width: 40px;
+    left: 98px;
+    top: 22.5px;
+
+}
+.arrow-up{
+    position: absolute;
+    background-color: #ffffff;
+    height: 1px;
+    width: 7px;
+    transform: rotate(45deg);
+    left: 132px;
+    top: 20.2px;
+
+}
+.arrow-down{
+    position: absolute;
+    background-color: #ffffff;
+    height: 1px;
+    width: 7px;
+    transform: rotate(-45deg);
+    left: 132px;
+    top: 24.8px;
+
+}
+/*arrow end*/
+/*silder bullet*/
+.bullet{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.dot-container {
+    position: absolute;
+    text-align: center;
+    background: transparent;
+    top: 120px;
+   
+}
+
+.dot {
+    cursor: pointer;
+    background: #ADC4FF;
+    height: 6px;
+    width: 13px;
+    border-radius: 14px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+    background-color: #fff;
+    width: 25px;
+    height: 6px;
+    border-radius: 14px;
+}
+/*silder bullet end*/
+
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--sign in white box-->
+<div class="white_box" id="whiteBoxLeft">
+    <div class="content">
+        <div class="hello">
+            Hello!
+        </div>
+        <div class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tincidunt morbi purus.
+        </div>
+        <div class="input-field">
+            <input type="text" required />
+            <label>USER NAME</label>
+        </div>
+        <div class="input-field">
+            <input type="password" required />
+            <label>PASSWORD</label>
+        </div>
+
+        <div class="btn">
+            <button class="button loginbutton">LOGIN</button>
+        </div>
+        <div class="login-signup-text">
+            <p>Don't have account? <a href="#" onclick="PositionChange(1)">Signup</a></p>
+        </div>
+    </div>
+</div>
+<!--sign in white box end-->
+
+<!--sign up white box-->
+<div class="white_box" id="whiteBoxRight" style="display: none;">
+    <div class="content">
+        <div class="hello">
+            Welcome
+        </div>
+        <div class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tincidunt morbi purus.
+        </div>
+        <div class="input-field">
+            <input type="text" required />
+            <label>USER NAME</label>
+        </div>
+        <div class="input-field">
+            <input type="email" required />
+            <label>EMAIL</label>
+        </div>
+        <div class="input-field">
+            <input type="password" required />
+            <label>PASSWORD</label>
+        </div>
+
+        <div class="btn">
+            <button class="button loginbutton">SIGNUP</button>
+        </div>
+        <div class="login-signup-text">
+            <p>Don't have account? <a href="#" onclick="PositionChange(2)">Signup</a></p>
+        </div>
+    </div>
+
+</div>
+<!--sign up white box end-->
+
+<!--blue box-->
+<div class="blue_box" id="blueBox">
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <p class="slide-title">We Are <b>Consilio Designs1</b></p>
+            <p class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tincidunt morbi purus.</p>
+            <div class="btn-learn">
+                <button class="learn-more-btn">Learn More</button>
+                <div class="arrow-mid"></div>
+                <div class="arrow-up"></div>
+                <div class="arrow-down"></div>
+            </div>
+
+        </div>
+
+        <div class="mySlides">
+            <p class="slide-title">We Are <b>Consilio Designs2</b></p>
+            <p class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tincidunt morbi purus.</p>
+            <div class="btn-learn">
+                <button class="learn-more-btn">Learn More</button>
+                <div class="arrow-mid"></div>
+                <div class="arrow-up"></div>
+                <div class="arrow-down"></div>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <p class="slide-title">We Are <b>Consilio Designs3</b></p>
+            <p class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tincidunt morbi purus.</p>
+            <div class="btn-learn">
+                <button class="learn-more-btn">Learn More</button>
+                <div class="arrow-mid"></div>
+                <div class="arrow-up"></div>
+                <div class="arrow-down"></div>
+            </div>
+        </div>
+        <div class="bullet">
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--blue box end-->
+<script src="js/main.js"></script>
+</body>
+</html>
